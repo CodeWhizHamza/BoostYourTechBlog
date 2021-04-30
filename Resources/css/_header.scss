@@ -1,5 +1,38 @@
-// .header {
-// }
+.header {
+  &__hero {
+    padding: 10rem 0;
+    @include flex(center, center);
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)
+      ),
+      url(../img/hero-large.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+  }
+  &__title {
+    font-size: $title;
+    font-family: $sans-serif;
+    color: $primary;
+    font-weight: normal;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+  }
+  @media screen and (max-width: $tablet) {
+    $title: 4.5rem;
+    &__title {
+      font-size: $title;
+    }
+  }
+  @media screen and (max-width: $phone) {
+    $title: 3rem;
+    &__title {
+      font-size: $title;
+    }
+  }
+}
 
 .nav {
   padding: 1rem 0;
