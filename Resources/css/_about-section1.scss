@@ -1,0 +1,48 @@
+.about {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-areas: "text-content image";
+  padding: 4rem 0;
+
+  &__col:first-child {
+    grid-area: text-content;
+  }
+  &__col:last-child {
+    grid-area: image;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__title {
+    font-size: 3.2rem;
+    font-family: $sans-serif;
+    margin-bottom: 3rem;
+    font-weight: normal;
+    color: $primary-text;
+  }
+  &__text {
+    margin-bottom: 1.5rem;
+    font-size: $text-normal;
+    font-family: $serif;
+    line-height: 1.5;
+    color: $secondary-text;
+  }
+  &__marker {
+    color: $primary;
+  }
+  @media screen and (max-width: $phone) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas: "image" "text-content";
+
+    &__image {
+      border-radius: 0.2rem;
+    }
+  }
+}
