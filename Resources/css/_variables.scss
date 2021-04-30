@@ -1,3 +1,4 @@
+// -------- COLORS ---------
 $primary: hsl(207, 90%, 54%);
 $primary-dark: hsl(210, 79%, 46%);
 $primary-light: #bbdefb;
@@ -7,6 +8,20 @@ $primary-text: #212121;
 $secondary-text: #757575;
 $divider-clr: #bdbdbd;
 
-$phone: 375px;
+// -------- SIZES ---------
+$phone: 420px;
 $tablet: 768px;
 $desktop: 1024px;
+
+$menu-size: 25rem;
+
+// -------- FONT FAMILIES ---------
+$serif: "Lora", serif;
+$sans-serif: "Roboto", sans-serif;
+
+// -------- FONT SIZES ---------
+$title: 6rem;
+$sub-title: 4.8rem;
+$small-title: 3.6rem;
+$text-normal: 2rem;
+$text-small: 1.6rem;

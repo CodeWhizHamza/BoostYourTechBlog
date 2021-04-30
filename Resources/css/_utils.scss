@@ -1,0 +1,14 @@
+.row {
+  width: 80%;
+  max-width: 1140px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet) {
+    width: 90%;
+  }
+}
+@mixin flex($justify-content, $align-items) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
