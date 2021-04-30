@@ -17,14 +17,47 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
-.grid {
-  display: grid;
-  gap: 10rem 0;
+.singleColLayout {
+  .grid {
+    display: grid;
+    gap: 10rem 0;
 
-  @media (max-width: $tablet) {
-    gap: 8rem 0;
+    @media (max-width: $tablet) {
+      gap: 8rem 0;
+    }
+    @media (max-width: $phone) {
+      gap: 6rem 0;
+    }
   }
-  @media (max-width: $phone) {
-    gap: 6rem 0;
+}
+.doubleColLayout {
+  .grid {
+    display: grid;
+    gap: 10rem 2rem;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: $tablet) {
+      gap: 8rem 1.5rem;
+    }
+    @media (max-width: $phone) {
+      grid-template-columns: 1fr;
+      gap: 6rem 1rem;
+    }
+  }
+}
+.threeColLayout {
+  .grid {
+    display: grid;
+    gap: 10rem 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @media (max-width: $tablet) {
+      gap: 8rem 1.5rem;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: $phone) {
+      grid-template-columns: 1fr;
+      gap: 6rem 1rem;
+    }
   }
 }

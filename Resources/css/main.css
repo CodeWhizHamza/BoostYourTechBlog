@@ -491,6 +491,7 @@
 .post__details {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: author;
 }
 
@@ -499,8 +500,9 @@
 }
 
 .post__actions {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: desc;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -581,6 +583,117 @@
   }
   .post__text {
     font-size: 1.8rem;
+  }
+}
+
+.doubleColLayout .post__header {
+  height: 50rem;
+  overflow: hidden;
+}
+
+.doubleColLayout .post__header:hover .post__content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.doubleColLayout .post__content {
+  height: 90%;
+      grid-template-areas: "category category" "title title" "author author" "desc desc";
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+  transition: transform 0.5s ease, opacity 0.3s ease, -webkit-transform 0.5s ease;
+}
+
+.doubleColLayout .post__title {
+  font-size: 4rem;
+}
+
+.doubleColLayout .post__details {
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .doubleColLayout .post__title {
+    font-size: 3.6rem;
+  }
+  .doubleColLayout .post__details, .doubleColLayout .post__actions {
+    font-size: 1.2rem;
+  }
+  .doubleColLayout .post__header {
+    height: 40rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .doubleColLayout .post__content {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.threeColLayout .post__header {
+  height: 30rem;
+  overflow: hidden;
+}
+
+.threeColLayout .post__header:hover .post__content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.threeColLayout .post__content {
+  height: 100%;
+      grid-template-areas: "category category" "title title" "author author" "desc desc";
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+  transition: transform 0.5s ease, opacity 0.3s ease, -webkit-transform 0.5s ease;
+}
+
+.threeColLayout .post__category {
+  padding: 0.6rem 3rem;
+}
+
+.threeColLayout .post__title {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.threeColLayout .post__details, .threeColLayout .post__actions {
+  font-size: 1rem;
+}
+
+.threeColLayout .post__details {
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .threeColLayout .post__title {
+    font-size: 3.6rem;
+  }
+  .threeColLayout .post__details, .threeColLayout .post__actions {
+    font-size: 1.2rem;
+  }
+  .threeColLayout .post__header {
+    height: 40rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .threeColLayout .post__content {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -736,21 +849,67 @@ html {
           box-sizing: border-box;
 }
 
-.grid {
+.singleColLayout .grid {
   display: -ms-grid;
   display: grid;
   gap: 10rem 0;
 }
 
 @media (max-width: 768px) {
-  .grid {
+  .singleColLayout .grid {
     gap: 8rem 0;
   }
 }
 
 @media (max-width: 450px) {
-  .grid {
+  .singleColLayout .grid {
     gap: 6rem 0;
+  }
+}
+
+.doubleColLayout .grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 10rem 2rem;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .doubleColLayout .grid {
+    gap: 8rem 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .doubleColLayout .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 6rem 1rem;
+  }
+}
+
+.threeColLayout .grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 10rem 2rem;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .threeColLayout .grid {
+    gap: 8rem 1.5rem;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .threeColLayout .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 6rem 1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
