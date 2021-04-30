@@ -15,7 +15,7 @@
 
 .btn {
   width: fit-content;
-  padding: 2.4rem 6rem;
+  padding: 2.4rem 5rem;
   font-size: $text-small;
   border: none;
   cursor: pointer;
@@ -44,5 +44,26 @@
   @media screen and (max-width: $tablet) {
     font-size: 1.4rem;
     padding: 2rem 4rem;
+  }
+  @media screen and (max-width: $tablet) {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
+}
+
+.inputField {
+  width: 100%;
+  font-size: $text-small;
+  font-family: $sans-serif;
+  padding: 2rem 4rem;
+  border: 2px solid $primary;
+  outline: none;
+
+  &::placeholder {
+    color: $secondary-text;
+  }
+
+  @media screen and (max-width: $phone) {
+    padding: 1rem 2rem;
   }
 }

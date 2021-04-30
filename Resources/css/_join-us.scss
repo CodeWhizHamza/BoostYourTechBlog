@@ -1,0 +1,30 @@
+.join {
+  padding: 15rem 0;
+
+  &__title {
+    text-align: center;
+    font-size: $title;
+    font-family: $sans-serif;
+    font-weight: 400;
+    color: $primary;
+    margin-bottom: 12rem;
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: min-content 1fr;
+    grid-template-areas: "label label" "input button";
+
+    label {
+      grid-area: label;
+      font-size: $text-small;
+      font-family: $sans-serif;
+      padding-left: 4rem;
+      padding-bottom: 1rem;
+
+      @media screen and (max-width: $tablet) {
+        padding-left: 2rem;
+      }
+    }
+  }
+}
