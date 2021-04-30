@@ -13,17 +13,9 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      href="./Vendors/Fonts/fontawesome-free-5.15.3-web/css/all.css"
     />
     <link rel="stylesheet" href="./Resources/css/main.css" />
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
-    ></script>
     <script defer type="module" src="./Resources/js/main.js"></script>
   </head>
   <body>
@@ -44,7 +36,10 @@
           <div class="nav__links-box">
             <ul class="nav__links">
               <li class="nav__item">
-                <a href="#" class="nav__link nav__link--submenu-open"
+                <a
+                  href="#"
+                  id="submenuOpen"
+                  class="nav__link nav__link--submenu-open"
                   >Home <span class="fas fa-caret-right"></span
                 ></a>
               </li>
@@ -57,7 +52,10 @@
             </ul>
             <ul class="nav__links nav__links--sub">
               <li class="nav__item">
-                <a href="#" class="nav__link nav__link--submenu-close"
+                <a
+                  href="#"
+                  id="submenuClose"
+                  class="nav__link nav__link--submenu-close"
                   ><span class="fas fa-caret-left"></span> Back</a
                 >
               </li>
@@ -78,5 +76,177 @@
         <h1 class="header__title">Boost Your Tech</h1>
       </div>
     </header>
+    <ul class="category row">
+      <li class="category__item category__item--active">
+        <a href="#" class="category__link">All</a>
+      </li>
+      <li class="category__item">
+        <a href="#" class="category__link">HTML</a>
+      </li>
+      <li class="category__item">
+        <a href="#" class="category__link">CSS</a>
+      </li>
+      <li class="category__item">
+        <a href="#" class="category__link">JavaScript</a>
+      </li>
+      <li class="category__item">
+        <a href="#" class="category__link">Async JS</a>
+      </li>
+      <li class="category__item">
+        <a href="#" class="category__link">Others</a>
+      </li>
+    </ul>
+    <section class="section row grid" id="posts">
+      <article data-href="./post.html" class="post">
+        <div class="post__header">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="./Resources/img/blog-post-large.jpg"
+            />
+            <source
+              media="(min-width: 760px)"
+              srcset="./Resources/img/blog-post-medium.jpg"
+            />
+            <img
+              src="./Resources/img/blog-post-small.jpg"
+              alt="How to write a blog image"
+              class="post__image"
+            />
+          </picture>
+          <div class="post__content">
+            <span class="post__category">Others</span>
+            <h2 class="post__title">
+              How to Write an Awesome Blog Post in 5 Steps
+            </h2>
+            <div class="post__details">
+              <span>Dan Shewan</span><span>Febraury 25, 2020</span>
+            </div>
+            <div class="post__actions">
+              <span class="post__views">
+                <span class="fas fa-eye"></span> 2k+ Views
+              </span>
+              <span class="post__views">
+                <span class="fas fa-comment"></span> 1k+ comments
+              </span>
+              <span class="post__views">
+                <span class="fas fa-share-square"></span> 243 shares
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="post__footer">
+          <p class="post__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas
+            augue dui feugiat sed sit ut sed aliquam. Congue eu tortor, sem in
+            adipiscing. Integer aliquet fermentum libero et fermentum malesuada
+            nunc. Nisl, purus sed vitae lectus sit non magna.
+          </p>
+          <button data-href="./post.html" class="btn btn--solid">
+            Continue reading &rarr;
+          </button>
+        </div>
+      </article>
+      <article data-href="./post.html" class="post">
+        <div class="post__header">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="./Resources/img/blog-post-large.jpg"
+            />
+            <source
+              media="(min-width: 760px)"
+              srcset="./Resources/img/blog-post-medium.jpg"
+            />
+            <img
+              src="./Resources/img/blog-post-small.jpg"
+              alt="How to write a blog image"
+              class="post__image"
+            />
+          </picture>
+          <div class="post__content">
+            <span class="post__category">Others</span>
+            <h2 class="post__title">
+              How to Write an Awesome Blog Post in 5 Steps
+            </h2>
+            <div class="post__details">
+              <span>Dan Shewan</span><span>Febraury 25, 2020</span>
+            </div>
+            <div class="post__actions">
+              <span class="post__views">
+                <span class="fas fa-eye"></span> 2k+ Views
+              </span>
+              <span class="post__views">
+                <span class="fas fa-comment"></span> 1k+ comments
+              </span>
+              <span class="post__views">
+                <span class="fas fa-share-square"></span> 243 shares
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="post__footer">
+          <p class="post__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas
+            augue dui feugiat sed sit ut sed aliquam. Congue eu tortor, sem in
+            adipiscing. Integer aliquet fermentum libero et fermentum malesuada
+            nunc. Nisl, purus sed vitae lectus sit non magna.
+          </p>
+          <button data-href="./post.html" class="btn btn--solid">
+            Continue reading &rarr;
+          </button>
+        </div>
+      </article>
+      <article data-href="./post.html" class="post">
+        <div class="post__header">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="./Resources/img/hero-large.jpg"
+            />
+            <source
+              media="(min-width: 760px)"
+              srcset="./Resources/img/hero-medium.jpg"
+            />
+            <img
+              src="./Resources/img/hero-small.jpg"
+              alt="How to write a blog image"
+              class="post__image"
+            />
+          </picture>
+          <div class="post__content">
+            <span class="post__category">Others</span>
+            <h2 class="post__title">
+              How to Write an Awesome Blog Post in 5 Steps
+            </h2>
+            <div class="post__details">
+              <span>Dan Shewan</span><span>Febraury 25, 2020</span>
+            </div>
+            <div class="post__actions">
+              <span class="post__views">
+                <span class="fas fa-eye"></span> 2k+ Views
+              </span>
+              <span class="post__views">
+                <span class="fas fa-comment"></span> 1k+ comments
+              </span>
+              <span class="post__views">
+                <span class="fas fa-share-square"></span> 243 shares
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="post__footer">
+          <p class="post__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas
+            augue dui feugiat sed sit ut sed aliquam. Congue eu tortor, sem in
+            adipiscing. Integer aliquet fermentum libero et fermentum malesuada
+            nunc. Nisl, purus sed vitae lectus sit non magna.
+          </p>
+          <button data-href="./post.html" class="btn btn--solid">
+            Continue reading &rarr;
+          </button>
+        </div>
+      </article>
+    </section>
   </body>
 </html>

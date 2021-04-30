@@ -1,0 +1,162 @@
+.post {
+  width: 100%;
+
+  &__header {
+    position: relative;
+    height: 60rem;
+    cursor: pointer;
+
+    &:active {
+      outline: 2px solid dodgerblue;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    padding: 3rem 3rem;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 1)
+    );
+    color: #fff;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content min-content;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 1rem 0;
+
+    grid-template-areas:
+      "category category"
+      "title title"
+      "author desc"
+      ". .";
+  }
+  &__category {
+    grid-area: category;
+    width: fit-content;
+    padding: 1rem 3rem;
+    background-color: $secondary;
+    font-size: $text-normal;
+    border-radius: 0.5rem;
+  }
+  &__title {
+    grid-area: title;
+    font-family: $sans-serif;
+    font-size: $title;
+  }
+  &__details {
+    grid-area: author;
+
+    span {
+      margin: 0 1rem;
+    }
+  }
+  &__actions {
+    grid-area: desc;
+    display: flex;
+    justify-content: flex-end;
+
+    span {
+      margin: 0 0.5rem;
+    }
+  }
+  &__details,
+  &__actions {
+    font-size: $text-small;
+    font-family: $serif;
+    font-style: italic;
+  }
+
+  &__footer {
+    padding: 3rem 0;
+  }
+  &__text {
+    font-size: $text-normal;
+    line-height: 1.5;
+    color: $secondary-text;
+    margin-bottom: 2rem;
+    max-width: 90ch;
+  }
+
+  @media screen and (max-width: $tablet) {
+    $title: 4.4rem;
+    $text-small: 1.4rem;
+    $text-normal: 1.8rem;
+
+    &__header {
+      height: 50rem;
+    }
+    &__content {
+      height: 60%;
+    }
+
+    &__title {
+      font-size: $title;
+    }
+    &__details {
+      span {
+        margin: 0 0.5rem;
+      }
+    }
+    &__actions {
+      span {
+        margin-left: 0.3rem;
+      }
+    }
+    &__details,
+    &__actions {
+      font-size: $text-small;
+    }
+    &__text {
+      font-size: 1.8rem;
+    }
+  }
+  @media screen and (max-width: $phone) {
+    $title: 3.6rem;
+    $text-small: 1.2rem;
+    $text-normal: 1.6rem;
+
+    &__header {
+      height: 45rem;
+    }
+    &__content {
+      height: 80%;
+      grid-template-areas:
+        "category category"
+        "title title"
+        "author author"
+        "desc desc";
+    }
+
+    &__title {
+      font-size: $title;
+    }
+    &__details {
+      text-align: right;
+      span {
+        margin: 0 0.5rem;
+      }
+    }
+    &__actions {
+      span {
+        margin-left: 0.3rem;
+      }
+    }
+    &__details,
+    &__actions {
+      font-size: $text-small;
+    }
+    &__text {
+      font-size: 1.8rem;
+    }
+  }
+}

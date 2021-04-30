@@ -12,3 +12,37 @@
   justify-content: $justify-content;
   align-items: $align-items;
 }
+
+.btn {
+  width: fit-content;
+  padding: 2.4rem 6rem;
+  font-size: $text-small;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &--solid {
+    color: #fff;
+    background-color: $primary;
+
+    &:hover,
+    &:focus {
+      background-color: $primary-dark;
+    }
+  }
+  &--outline {
+    color: $primary;
+    border: 2px solid $primary;
+    background: transparent;
+
+    &:hover,
+    &:focus {
+      background-color: $primary;
+      color: #fff;
+    }
+  }
+  @media screen and (max-width: $tablet) {
+    font-size: 1.4rem;
+    padding: 2rem 4rem;
+  }
+}

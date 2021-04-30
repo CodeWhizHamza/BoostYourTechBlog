@@ -1,5 +1,5 @@
 // --------- MODULES ---------//
-import { handleMenu, openSubmenu, closeSubmenu } from "./menuHandler.js";
+import { toggleMenu, openSubmenu, closeSubmenu } from "./menuHandler.js";
 
 // --------- ELEMENTS ---------//
 const btnToggler = document.querySelector(".toggler");
@@ -8,7 +8,7 @@ const btnSubmenuOpen = document.querySelector(".nav__link--submenu-open");
 const btnSubmenuClose = document.querySelector(".nav__link--submenu-close");
 
 // --------- EVENT HANDLERS ---------//
-btnToggler.addEventListener("click", handleMenu);
+btnToggler.addEventListener("click", toggleMenu);
 btnSubmenuOpen.addEventListener("click", openSubmenu);
 btnSubmenuClose.addEventListener("click", closeSubmenu);
 

@@ -1,6 +1,9 @@
 @import "variables";
 @import "utils";
+
 @import "header";
+@import "category";
+@import "post";
 
 * {
   margin: 0;
@@ -10,4 +13,15 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+}
+.grid {
+  display: grid;
+  gap: 10rem 0;
+
+  @media (max-width: $tablet) {
+    gap: 8rem 0;
+  }
+  @media (max-width: $phone) {
+    gap: 6rem 0;
+  }
 }

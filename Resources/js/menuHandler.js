@@ -1,6 +1,6 @@
 const box = document.querySelector(".nav__links-box");
 
-export function handleMenu() {
+export function toggleMenu() {
   const html = document.documentElement;
   html.classList.toggle("menu-open");
   box.classList.remove("open-submenu");

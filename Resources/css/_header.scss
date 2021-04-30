@@ -25,11 +25,26 @@
     &__title {
       font-size: $title;
     }
+
+    &__hero {
+      background-image: linear-gradient(
+          rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0.8)
+        ),
+        url(../img/hero-medium.jpg);
+    }
   }
   @media screen and (max-width: $phone) {
     $title: 3rem;
     &__title {
       font-size: $title;
+    }
+    &__hero {
+      background-image: linear-gradient(
+          rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0.8)
+        ),
+        url(../img/hero-small.jpg);
     }
   }
 }

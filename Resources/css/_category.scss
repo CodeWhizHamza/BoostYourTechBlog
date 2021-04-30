@@ -1,0 +1,46 @@
+.category {
+  list-style: none;
+  @include flex(center, center);
+  padding: 6rem 0;
+  gap: 0 5rem;
+
+  &__item {
+    display: block;
+    border-bottom: 3px solid transparent;
+    transition: border 0.2s ease;
+
+    &:hover {
+      border-bottom: 3px solid $primary;
+    }
+
+    &--active,
+    &--active:hover {
+      border-bottom: 3px solid $primary-dark;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $primary-text;
+    font-size: $text-normal;
+    font-family: $sans-serif;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: $tablet) {
+    flex-wrap: wrap;
+    $text-normal: 1.8rem;
+    &__link {
+      font-size: $text-normal;
+    }
+  }
+  @media screen and (max-width: $phone) {
+    gap: 2rem 3rem;
+    justify-content: start;
+
+    $text-normal: 1.6rem;
+    &__link {
+      font-size: $text-normal;
+    }
+  }
+}
