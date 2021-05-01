@@ -78,6 +78,7 @@ label {
 
   &--textarea {
     height: 40rem;
+    resize: none;
   }
 
   @media screen and (max-width: $phone) {
@@ -85,7 +86,6 @@ label {
 
     &--textarea {
       height: 30rem;
-      resize: none;
     }
   }
 }
