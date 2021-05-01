@@ -543,7 +543,8 @@ label {
   -ms-grid-column-span: 2;
   grid-area: title;
   font-family: "Roboto", sans-serif;
-  font-size: 6rem;
+  font-size: 5rem;
+  font-weight: normal;
 }
 
 .post__details {
@@ -600,7 +601,7 @@ label {
     height: 60%;
   }
   .post__title {
-    font-size: 4.4rem;
+    font-size: 4rem;
   }
   .post__details span {
     margin: 0 0.5rem;

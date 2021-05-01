@@ -53,7 +53,8 @@
   &__title {
     grid-area: title;
     font-family: $sans-serif;
-    font-size: $title;
+    font-size: 5rem;
+    font-weight: normal;
   }
   &__details {
     grid-area: author;
@@ -90,7 +91,7 @@
   }
 
   @media screen and (max-width: $tablet) {
-    $title: 4.4rem;
+    $title: 4rem;
     $text-small: 1.4rem;
     $text-normal: 1.8rem;
 
