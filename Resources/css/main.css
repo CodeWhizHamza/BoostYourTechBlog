@@ -107,6 +107,7 @@ label {
   }
   .inputField--textarea {
     height: 30rem;
+    resize: none;
   }
 }
 
