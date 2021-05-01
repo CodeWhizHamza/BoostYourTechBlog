@@ -245,7 +245,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #212121;
+  background-color: #212121ef;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -810,6 +810,16 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer__col {
+    width: 100%;
   }
 }
 
@@ -973,6 +983,30 @@
   .features__feature {
     width: 100%;
   }
+}
+
+.aboutme {
+  padding: 10rem 0;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.aboutme__title {
+  font-size: 6rem;
+  padding: 4rem 0;
+  text-align: center;
+  color: #2094f3;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+.aboutme__text {
+  font-family: "Lora", serif;
+  color: #757575;
+  line-height: 1.5;
+  font-size: 2rem;
+  text-align: center;
+  max-width: 80ch;
+  margin: auto;
 }
 
 * {

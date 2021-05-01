@@ -28,6 +28,11 @@
     list-style: none;
     @media screen and (max-width: $tablet) {
       width: fit-content;
+      text-align: center;
+      align-items: center;
+    }
+    @media screen and (max-width: $phone) {
+      width: 100%;
     }
   }
   &__title {

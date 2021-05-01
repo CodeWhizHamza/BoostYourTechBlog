@@ -15,10 +15,10 @@ const btnThreeCol = document.querySelector(".nav__link--three");
 // --------- EVENT HANDLERS ---------//
 logo.addEventListener("click", () => (window.location = "/index.html"));
 
-btnToggler.addEventListener("click", toggleMenu);
-btnSubmenuOpen.addEventListener("click", openSubmenu);
-btnSubmenuClose.addEventListener("click", closeSubmenu);
+if (btnToggler) btnToggler.addEventListener("click", toggleMenu);
+if (btnSubmenuOpen) btnSubmenuOpen.addEventListener("click", openSubmenu);
+if (btnSubmenuClose) btnSubmenuClose.addEventListener("click", closeSubmenu);
 
-btnSingleCol.addEventListener("click", singleCol);
-btnDoubleCol.addEventListener("click", doubleCol);
-btnThreeCol.addEventListener("click", threeCol);
+if (btnSingleCol) btnSingleCol.addEventListener("click", singleCol);
+if (btnDoubleCol) btnDoubleCol.addEventListener("click", doubleCol);
+if (btnThreeCol) btnThreeCol.addEventListener("click", threeCol);
