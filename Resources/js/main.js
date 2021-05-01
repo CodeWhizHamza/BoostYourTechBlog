@@ -1,6 +1,4 @@
 // --------- MODULES ---------//
-import "regenerator-runtime/runtime";
-import "core-js/stable";
 
 import { toggleMenu, openSubmenu, closeSubmenu } from "./menuHandler.js";
 import { singleCol, doubleCol, threeCol } from "./menuStyleHandler.js";
