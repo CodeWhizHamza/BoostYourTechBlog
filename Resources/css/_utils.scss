@@ -14,11 +14,13 @@
 }
 
 .btn {
+  display: block;
   width: fit-content;
   padding: 2.4rem 5rem;
   font-size: $text-small;
   border: none;
   cursor: pointer;
+  text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
 
   &--solid {
@@ -87,5 +89,17 @@ label {
     &--textarea {
       height: 30rem;
     }
+  }
+}
+.spin {
+  width: fit-content;
+  animation: spin 1.6s linear infinite !important;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

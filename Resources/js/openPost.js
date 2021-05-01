@@ -1,5 +1,5 @@
 export default function openPost(e) {
   e.preventDefault();
 
-  document.location = `/${this.dataset.href}?id=${this.dataset.id}`;
+  document.location = `/post.html?id=${this.dataset.id}`;
 }

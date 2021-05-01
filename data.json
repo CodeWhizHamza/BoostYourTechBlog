@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "category": "html",
+    "title": "HTML 5 Cheat Sheets",
+    "author": "Muhammad Hamza",
+    "date": "May 01, 2021",
+    "views": 500,
+    "shares": 200,
+    "comments": 124,
+    "text": "The fifth revision of HyperText Markup Language (HTML) continues HTML’s evolution to a dynamic scripting language.",
+    "image": "https://images.unsplash.com/photo-1542831371-32f555c86880?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "id": 2,
+    "category": "html",
+    "title": "100 Social Media Blogs – The Definitive List You Must Bookmark Now!",
+    "author": "Muhammad Hamza",
+    "date": "May 01, 2021",
+    "views": 500,
+    "shares": 200,
+    "comments": 124,
+    "text": "Social media and social networking sites aren’t just about making new friends. These concepts have introduced a whole new way of communicating and managing information with the help of Web-based communities...",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1002&q=80"
+  },
+  {
+    "id": 3,
+    "category": "css",
+    "title": "What Does CSS Do?",
+    "author": "Muhammad Hamza",
+    "date": "May 01, 2021",
+    "views": 500,
+    "shares": 200,
+    "comments": 124,
+    "text": "Cascading Style Sheets (CSS) styles HTML elements with greater control than just using HTML. On the left of the image, Facebook appears as it currently exists; on the right, however, the same Facebook page is shown without all the CSS styling. Without the CSS...",
+    "image": "https://images.unsplash.com/photo-1505685296765-3a2736de412f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "id": 4,
+    "category": "css",
+    "title": "Tech 101: The Ultimate Guide To CSS",
+    "author": "Muhammad Hamza",
+    "date": "May 01, 2021",
+    "views": 500,
+    "shares": 200,
+    "comments": 124,
+    "text": "Remember HTML (Hypertext Markup Language)? The coding language that serves as the foundation for all web development? Well, if HTML is the first language you’ll want to learn when you’re interested in building websites, its cousin CSS is a close second.",
+    "image": "https://images.unsplash.com/photo-1518085250887-2f903c200fee?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "id": 5,
+    "category": "javascript",
+    "title": "Introduction to JavaScript: Basics",
+    "author": "Mahendra Choudhary",
+    "date": "May 01, 2021",
+    "views": 500,
+    "shares": 200,
+    "comments": 124,
+    "text": "JavaScript is the programming language that lets the Internet work. The Internet would be nothing without JavaScript and in this lesson, you will find out why.",
+    "image": "https://miro.medium.com/max/700/1*LyZcwuLWv2FArOumCxobpA.png"
+  },
+  {
+    "id": 6,
+    "category": "javascript",
+    "title": "Why JavaScript is a single-thread language that can be non-blocking ?",
+    "author": "Muhammad Hamza",
+    "date": "May 01, 2021",
+    "views": 500,
+    "shares": 200,
+    "comments": 124,
+    "text": "The JavaScript within a chrome browser is implemented by V8 engine. The V8 engine has two parts, Memory heap and Call stack. Memory Heap is used to allocate the memory used by your JavaScript program. Remember memory heap is not the same as the heap data structures, they are totally different. It is the free space inside ...",
+    "image": "https://images.unsplash.com/photo-1518932945647-7a1c969f8be2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80"
+  },
+  {
+    "id": 7,
+    "category": "async js",
+    "title": "JavaScript Promise Chaining",
+    "author": "Muhammad Hamza",
+    "date": "May 01, 2021",
+    "views": 500,
+    "shares": 200,
+    "comments": 124,
+    "text": "In this article, we will discuss how to perform Promise Chaining in JavaScript. A Promise is basically an object which represents the completion (or failure) of an asynchronous operation along with its result.",
+    "image": "https://images.unsplash.com/photo-1591267990439-bc68529677c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1336&q=80"
+  },
+  {
+    "id": 8,
+    "category": "async js",
+    "title": "How to delay a loop in JavaScript using async/await with Promise ?",
+    "author": "Muhammad Hamza",
+    "date": "May 01, 2021",
+    "views": 500,
+    "shares": 200,
+    "comments": 124,
+    "text": "Given below is a JavaScript code snippet which is basically described how to delay a loop in JavaScript using async/await. In this article, we are using JavaScript either by web browser or Node.js",
+    "image": "https://images.unsplash.com/photo-1593720218746-e13e4a422a3b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "id": 9,
+    "category": "others",
+    "title": "7 Critical Tips to Learn Programming Faster – #3 Will Land You a Job",
+    "author": "Muhammad Hamza",
+    "date": "May 01, 2021",
+    "views": 500,
+    "shares": 200,
+    "comments": 124,
+    "text": "Whether you’re currently pursuing a degree in computer science, a veteran using the GI Bill to choose their next mission, an aspiring self-taught developer, or a coding boot camp student, mastering the craft of programming is a ...",
+    "image": "https://images.unsplash.com/photo-1535551951406-a19828b0a76b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1346&q=80"
+  },
+  {
+    "id": 10,
+    "category": "others",
+    "title": "8 Most Effective Games and Apps to Learn to Type Fast",
+    "author": "Muhammad Hamza",
+    "date": "May 01, 2021",
+    "views": 500,
+    "shares": 200,
+    "comments": 124,
+    "text": "Computers and cell phones have become an integrated tool in our professional and personal lives that the original methods of using pen and paper may not be so common anymore.",
+    "image": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80"
+  }
+]
