@@ -14,9 +14,12 @@
   }
   &__title {
     font-size: 3.4rem;
+    font-family: $sans-serif;
+
     color: $white;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
+
     top: 0;
     left: 0;
     width: 100%;
