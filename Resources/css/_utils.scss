@@ -50,9 +50,22 @@
     padding: 1rem 2rem;
   }
 }
+label {
+  font-size: $text-small;
+  font-family: $sans-serif;
+  color: $primary-text;
+  padding-left: 4rem;
+  padding-bottom: 1rem;
 
+  @media screen and (max-width: $tablet) {
+    padding-left: 2rem;
+  }
+}
 .inputField {
   width: 100%;
+  max-width: 750px;
+  // margin: auto;
+  display: block;
   font-size: $text-small;
   font-family: $sans-serif;
   padding: 2rem 4rem;
@@ -63,7 +76,15 @@
     color: $secondary-text;
   }
 
+  &--textarea {
+    height: 40rem;
+  }
+
   @media screen and (max-width: $phone) {
     padding: 1rem 2rem;
+
+    &--textarea {
+      height: 30rem;
+    }
   }
 }

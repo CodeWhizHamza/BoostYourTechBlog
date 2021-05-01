@@ -49,24 +49,52 @@
         </div>
       </nav>
       <div class="header__hero row">
-        <h1 class="header__title">About Us</h1>
+        <h1 class="header__title">Contact Us</h1>
       </div>
     </header>
-    <h2 class="join__title">Comming Soon!</h2>
-    <section class="join row">
-      <h2 class="join__title">Join Us</h2>
-      <form class="join__form">
+    <form class="contact row">
+      <div class="contact__box">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          class="inputField"
+          id="name"
+          placeholder="e.g. John Doe"
+        />
+      </div>
+      <div class="contact__box">
+        <label for="subject">Subject:</label>
+        <input
+          type="text"
+          class="inputField"
+          id="subject"
+          placeholder="e.g. Here is a work..."
+        />
+      </div>
+      <div class="contact__box">
         <label for="email">Email:</label>
         <input
-          type="email"
-          placeholder="john@doe.com"
-          name="email"
-          id="email"
+          type="text"
           class="inputField"
+          id="email"
+          placeholder="e.g. john@doe.com"
         />
-        <button class="btn btn--outline">Get notified!</button>
-      </form>
-    </section>
+      </div>
+      <div class="contact__box">
+        <label for="message">Message:</label>
+        <textarea
+          type="text"
+          class="inputField inputField--textarea"
+          id="message"
+          placeholder="What's on your mind!"
+        ></textarea>
+      </div>
+      <div class="contact__box">
+        <button type="submit" class="btn btn--outline">
+          Send your message
+        </button>
+      </div>
+    </form>
 
     <footer class="footer">
       <div class="footer__content row">

@@ -56,8 +56,24 @@
   }
 }
 
+label {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+  padding-left: 4rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  label {
+    padding-left: 2rem;
+  }
+}
+
 .inputField {
   width: 100%;
+  max-width: 750px;
+  display: block;
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
   padding: 2rem 4rem;
@@ -81,9 +97,16 @@
   color: #757575;
 }
 
+.inputField--textarea {
+  height: 40rem;
+}
+
 @media screen and (max-width: 450px) {
   .inputField {
     padding: 1rem 2rem;
+  }
+  .inputField--textarea {
+    height: 30rem;
   }
 }
 
@@ -747,16 +770,6 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: label;
-  font-size: 1.6rem;
-  font-family: "Roboto", sans-serif;
-  padding-left: 4rem;
-  padding-bottom: 1rem;
-}
-
-@media screen and (max-width: 768px) {
-  .join__form label {
-    padding-left: 2rem;
-  }
 }
 
 .footer {
@@ -1007,6 +1020,14 @@
   text-align: center;
   max-width: 80ch;
   margin: auto;
+}
+
+.contact {
+  padding: 10rem 0;
+}
+
+.contact__box {
+  margin: 3rem 0;
 }
 
 * {
