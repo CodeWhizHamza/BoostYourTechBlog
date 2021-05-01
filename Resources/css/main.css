@@ -625,7 +625,7 @@ label {
         grid-template-areas: "category category" "title title" "author author" "desc desc";
   }
   .post__title {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
   }
   .post__details {
     text-align: right;
